@@ -1,0 +1,450 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.healthpro"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/Users/aminigbo/Documents/app/health-app/android/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->/Users/aminigbo/Documents/app/health-app/android/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Users/aminigbo/Documents/app/health-app/android/app/src/main/AndroidManifest.xml:3:5-67
+11-->/Users/aminigbo/Documents/app/health-app/android/app/src/main/AndroidManifest.xml:3:22-64
+12    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+12-->/Users/aminigbo/Documents/app/health-app/android/app/src/main/AndroidManifest.xml:4:5-80
+12-->/Users/aminigbo/Documents/app/health-app/android/app/src/main/AndroidManifest.xml:4:22-78
+13    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+13-->/Users/aminigbo/Documents/app/health-app/android/app/src/main/AndroidManifest.xml:5:5-78
+13-->/Users/aminigbo/Documents/app/health-app/android/app/src/main/AndroidManifest.xml:5:22-76
+14    <uses-permission android:name="android.permission.WAKE_LOCK" />
+14-->[:react-native-firebase_messaging] /Users/aminigbo/Documents/app/health-app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:8:5-68
+14-->[:react-native-firebase_messaging] /Users/aminigbo/Documents/app/health-app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:8:22-65
+15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+15-->[:react-native-firebase_messaging] /Users/aminigbo/Documents/app/health-app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:9:5-79
+15-->[:react-native-firebase_messaging] /Users/aminigbo/Documents/app/health-app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:9:22-76
+16    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+16-->[com.google.firebase:firebase-messaging:23.4.0] /Users/aminigbo/.gradle/caches/transforms-3/89b19f608f45a95c166039c8441fb1f0/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:23:5-77
+16-->[com.google.firebase:firebase-messaging:23.4.0] /Users/aminigbo/.gradle/caches/transforms-3/89b19f608f45a95c166039c8441fb1f0/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:23:22-74
+17    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" /> <!-- for android -->
+17-->[com.google.firebase:firebase-messaging:23.4.0] /Users/aminigbo/.gradle/caches/transforms-3/89b19f608f45a95c166039c8441fb1f0/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:26:5-82
+17-->[com.google.firebase:firebase-messaging:23.4.0] /Users/aminigbo/.gradle/caches/transforms-3/89b19f608f45a95c166039c8441fb1f0/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:26:22-79
+18    <!-- <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/> -->
+19    <!-- <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/> -->
+20    <!-- <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" /> -->
+21    <!-- <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" /> -->
+22    <!-- for Samsung -->
+23    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+23-->[me.leolin:ShortcutBadger:1.1.22] /Users/aminigbo/.gradle/caches/transforms-3/776c19c96393caa7fd08ffbf544017c5/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:19:5-86
+23-->[me.leolin:ShortcutBadger:1.1.22] /Users/aminigbo/.gradle/caches/transforms-3/776c19c96393caa7fd08ffbf544017c5/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:19:22-83
+24    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- for htc -->
+24-->[me.leolin:ShortcutBadger:1.1.22] /Users/aminigbo/.gradle/caches/transforms-3/776c19c96393caa7fd08ffbf544017c5/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:20:5-87
+24-->[me.leolin:ShortcutBadger:1.1.22] /Users/aminigbo/.gradle/caches/transforms-3/776c19c96393caa7fd08ffbf544017c5/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:20:22-84
+25    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+25-->[me.leolin:ShortcutBadger:1.1.22] /Users/aminigbo/.gradle/caches/transforms-3/776c19c96393caa7fd08ffbf544017c5/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:23:5-81
+25-->[me.leolin:ShortcutBadger:1.1.22] /Users/aminigbo/.gradle/caches/transforms-3/776c19c96393caa7fd08ffbf544017c5/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:23:22-78
+26    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- for sony -->
+26-->[me.leolin:ShortcutBadger:1.1.22] /Users/aminigbo/.gradle/caches/transforms-3/776c19c96393caa7fd08ffbf544017c5/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:24:5-83
+26-->[me.leolin:ShortcutBadger:1.1.22] /Users/aminigbo/.gradle/caches/transforms-3/776c19c96393caa7fd08ffbf544017c5/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:24:22-80
+27    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+27-->[me.leolin:ShortcutBadger:1.1.22] /Users/aminigbo/.gradle/caches/transforms-3/776c19c96393caa7fd08ffbf544017c5/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:27:5-88
+27-->[me.leolin:ShortcutBadger:1.1.22] /Users/aminigbo/.gradle/caches/transforms-3/776c19c96393caa7fd08ffbf544017c5/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:27:22-85
+28    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- for apex -->
+28-->[me.leolin:ShortcutBadger:1.1.22] /Users/aminigbo/.gradle/caches/transforms-3/776c19c96393caa7fd08ffbf544017c5/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:28:5-92
+28-->[me.leolin:ShortcutBadger:1.1.22] /Users/aminigbo/.gradle/caches/transforms-3/776c19c96393caa7fd08ffbf544017c5/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:28:22-89
+29    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- for solid -->
+29-->[me.leolin:ShortcutBadger:1.1.22] /Users/aminigbo/.gradle/caches/transforms-3/776c19c96393caa7fd08ffbf544017c5/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:31:5-84
+29-->[me.leolin:ShortcutBadger:1.1.22] /Users/aminigbo/.gradle/caches/transforms-3/776c19c96393caa7fd08ffbf544017c5/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:31:22-81
+30    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- for huawei -->
+30-->[me.leolin:ShortcutBadger:1.1.22] /Users/aminigbo/.gradle/caches/transforms-3/776c19c96393caa7fd08ffbf544017c5/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:34:5-83
+30-->[me.leolin:ShortcutBadger:1.1.22] /Users/aminigbo/.gradle/caches/transforms-3/776c19c96393caa7fd08ffbf544017c5/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:34:22-80
+31    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+31-->[me.leolin:ShortcutBadger:1.1.22] /Users/aminigbo/.gradle/caches/transforms-3/776c19c96393caa7fd08ffbf544017c5/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:37:5-91
+31-->[me.leolin:ShortcutBadger:1.1.22] /Users/aminigbo/.gradle/caches/transforms-3/776c19c96393caa7fd08ffbf544017c5/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:37:22-88
+32    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+32-->[me.leolin:ShortcutBadger:1.1.22] /Users/aminigbo/.gradle/caches/transforms-3/776c19c96393caa7fd08ffbf544017c5/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:38:5-92
+32-->[me.leolin:ShortcutBadger:1.1.22] /Users/aminigbo/.gradle/caches/transforms-3/776c19c96393caa7fd08ffbf544017c5/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:38:22-89
+33    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- for ZUK -->
+33-->[me.leolin:ShortcutBadger:1.1.22] /Users/aminigbo/.gradle/caches/transforms-3/776c19c96393caa7fd08ffbf544017c5/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:39:5-93
+33-->[me.leolin:ShortcutBadger:1.1.22] /Users/aminigbo/.gradle/caches/transforms-3/776c19c96393caa7fd08ffbf544017c5/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:39:22-90
+34    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- for OPPO -->
+34-->[me.leolin:ShortcutBadger:1.1.22] /Users/aminigbo/.gradle/caches/transforms-3/776c19c96393caa7fd08ffbf544017c5/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:42:5-73
+34-->[me.leolin:ShortcutBadger:1.1.22] /Users/aminigbo/.gradle/caches/transforms-3/776c19c96393caa7fd08ffbf544017c5/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:42:22-70
+35    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+35-->[me.leolin:ShortcutBadger:1.1.22] /Users/aminigbo/.gradle/caches/transforms-3/776c19c96393caa7fd08ffbf544017c5/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:45:5-82
+35-->[me.leolin:ShortcutBadger:1.1.22] /Users/aminigbo/.gradle/caches/transforms-3/776c19c96393caa7fd08ffbf544017c5/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:45:22-79
+36    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" /> <!-- for EvMe -->
+36-->[me.leolin:ShortcutBadger:1.1.22] /Users/aminigbo/.gradle/caches/transforms-3/776c19c96393caa7fd08ffbf544017c5/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:46:5-83
+36-->[me.leolin:ShortcutBadger:1.1.22] /Users/aminigbo/.gradle/caches/transforms-3/776c19c96393caa7fd08ffbf544017c5/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:46:22-80
+37    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+37-->[me.leolin:ShortcutBadger:1.1.22] /Users/aminigbo/.gradle/caches/transforms-3/776c19c96393caa7fd08ffbf544017c5/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:49:5-88
+37-->[me.leolin:ShortcutBadger:1.1.22] /Users/aminigbo/.gradle/caches/transforms-3/776c19c96393caa7fd08ffbf544017c5/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:49:22-85
+38    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+38-->[me.leolin:ShortcutBadger:1.1.22] /Users/aminigbo/.gradle/caches/transforms-3/776c19c96393caa7fd08ffbf544017c5/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:50:5-89
+38-->[me.leolin:ShortcutBadger:1.1.22] /Users/aminigbo/.gradle/caches/transforms-3/776c19c96393caa7fd08ffbf544017c5/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:50:22-86
+39
+40    <application
+40-->/Users/aminigbo/Documents/app/health-app/android/app/src/main/AndroidManifest.xml:7:5-26:19
+41        android:name="com.healthpro.MainApplication"
+41-->/Users/aminigbo/Documents/app/health-app/android/app/src/main/AndroidManifest.xml:8:7-38
+42        android:allowBackup="false"
+42-->/Users/aminigbo/Documents/app/health-app/android/app/src/main/AndroidManifest.xml:12:7-34
+43        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+43-->[androidx.core:core:1.8.0] /Users/aminigbo/.gradle/caches/transforms-3/9623e378e4dfc57c47793d0ffd25ee05/transformed/core-1.8.0/AndroidManifest.xml:24:18-86
+44        android:icon="@mipmap/ic_launcher"
+44-->/Users/aminigbo/Documents/app/health-app/android/app/src/main/AndroidManifest.xml:10:7-41
+45        android:label="@string/app_name"
+45-->/Users/aminigbo/Documents/app/health-app/android/app/src/main/AndroidManifest.xml:9:7-39
+46        android:roundIcon="@mipmap/ic_launcher_round"
+46-->/Users/aminigbo/Documents/app/health-app/android/app/src/main/AndroidManifest.xml:11:7-52
+47        android:theme="@style/AppTheme" >
+47-->/Users/aminigbo/Documents/app/health-app/android/app/src/main/AndroidManifest.xml:13:7-38
+48        <activity
+48-->/Users/aminigbo/Documents/app/health-app/android/app/src/main/AndroidManifest.xml:14:7-25:18
+49            android:name="com.healthpro.MainActivity"
+49-->/Users/aminigbo/Documents/app/health-app/android/app/src/main/AndroidManifest.xml:15:9-37
+50            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
+50-->/Users/aminigbo/Documents/app/health-app/android/app/src/main/AndroidManifest.xml:17:9-118
+51            android:exported="true"
+51-->/Users/aminigbo/Documents/app/health-app/android/app/src/main/AndroidManifest.xml:20:9-32
+52            android:label="@string/app_name"
+52-->/Users/aminigbo/Documents/app/health-app/android/app/src/main/AndroidManifest.xml:16:9-41
+53            android:launchMode="singleTask"
+53-->/Users/aminigbo/Documents/app/health-app/android/app/src/main/AndroidManifest.xml:18:9-40
+54            android:windowSoftInputMode="adjustResize" >
+54-->/Users/aminigbo/Documents/app/health-app/android/app/src/main/AndroidManifest.xml:19:9-51
+55            <intent-filter>
+55-->/Users/aminigbo/Documents/app/health-app/android/app/src/main/AndroidManifest.xml:21:9-24:25
+56                <action android:name="android.intent.action.MAIN" />
+56-->/Users/aminigbo/Documents/app/health-app/android/app/src/main/AndroidManifest.xml:22:13-65
+56-->/Users/aminigbo/Documents/app/health-app/android/app/src/main/AndroidManifest.xml:22:21-62
+57
+58                <category android:name="android.intent.category.LAUNCHER" />
+58-->/Users/aminigbo/Documents/app/health-app/android/app/src/main/AndroidManifest.xml:23:13-73
+58-->/Users/aminigbo/Documents/app/health-app/android/app/src/main/AndroidManifest.xml:23:23-70
+59            </intent-filter>
+60        </activity>
+61
+62        <service
+62-->[:react-native-firebase_messaging] /Users/aminigbo/Documents/app/health-app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:12:9-14:40
+63            android:name="io.invertase.firebase.messaging.ReactNativeFirebaseMessagingHeadlessService"
+63-->[:react-native-firebase_messaging] /Users/aminigbo/Documents/app/health-app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:13:13-103
+64            android:exported="false" />
+64-->[:react-native-firebase_messaging] /Users/aminigbo/Documents/app/health-app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:14:13-37
+65        <service
+65-->[:react-native-firebase_messaging] /Users/aminigbo/Documents/app/health-app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:15:9-21:19
+66            android:name="io.invertase.firebase.messaging.ReactNativeFirebaseMessagingService"
+66-->[:react-native-firebase_messaging] /Users/aminigbo/Documents/app/health-app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:16:13-95
+67            android:exported="false" >
+67-->[:react-native-firebase_messaging] /Users/aminigbo/Documents/app/health-app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:17:13-37
+68            <intent-filter>
+68-->[:react-native-firebase_messaging] /Users/aminigbo/Documents/app/health-app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:18:13-20:29
+69                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+69-->[:react-native-firebase_messaging] /Users/aminigbo/Documents/app/health-app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:19:17-78
+69-->[:react-native-firebase_messaging] /Users/aminigbo/Documents/app/health-app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:19:25-75
+70            </intent-filter>
+71        </service>
+72
+73        <receiver
+73-->[:react-native-firebase_messaging] /Users/aminigbo/Documents/app/health-app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:23:9-30:20
+74            android:name="io.invertase.firebase.messaging.ReactNativeFirebaseMessagingReceiver"
+74-->[:react-native-firebase_messaging] /Users/aminigbo/Documents/app/health-app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:24:13-96
+75            android:exported="true"
+75-->[:react-native-firebase_messaging] /Users/aminigbo/Documents/app/health-app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:25:13-36
+76            android:permission="com.google.android.c2dm.permission.SEND" >
+76-->[:react-native-firebase_messaging] /Users/aminigbo/Documents/app/health-app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:26:13-73
+77            <intent-filter>
+77-->[:react-native-firebase_messaging] /Users/aminigbo/Documents/app/health-app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:27:13-29:29
+78                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+78-->[:react-native-firebase_messaging] /Users/aminigbo/Documents/app/health-app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:28:17-81
+78-->[:react-native-firebase_messaging] /Users/aminigbo/Documents/app/health-app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:28:25-78
+79            </intent-filter>
+80        </receiver>
+81
+82        <meta-data
+82-->[:react-native-firebase_messaging] /Users/aminigbo/Documents/app/health-app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:32:9-34:36
+83            android:name="firebase_messaging_auto_init_enabled"
+83-->[:react-native-firebase_messaging] /Users/aminigbo/Documents/app/health-app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:33:13-64
+84            android:value="true" />
+84-->[:react-native-firebase_messaging] /Users/aminigbo/Documents/app/health-app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:34:13-33
+85        <meta-data
+85-->[:react-native-firebase_messaging] /Users/aminigbo/Documents/app/health-app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:35:9-37:32
+86            android:name="com.google.firebase.messaging.default_notification_channel_id"
+86-->[:react-native-firebase_messaging] /Users/aminigbo/Documents/app/health-app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:36:13-89
+87            android:value="" />
+87-->[:react-native-firebase_messaging] /Users/aminigbo/Documents/app/health-app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:37:13-29
+88        <meta-data
+88-->[:react-native-firebase_messaging] /Users/aminigbo/Documents/app/health-app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:38:9-40:47
+89            android:name="com.google.firebase.messaging.default_notification_color"
+89-->[:react-native-firebase_messaging] /Users/aminigbo/Documents/app/health-app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:39:13-84
+90            android:resource="@color/white" />
+90-->[:react-native-firebase_messaging] /Users/aminigbo/Documents/app/health-app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:40:13-44
+91        <meta-data
+91-->[:react-native-firebase_app] /Users/aminigbo/Documents/app/health-app/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:9:9-11:36
+92            android:name="app_data_collection_default_enabled"
+92-->[:react-native-firebase_app] /Users/aminigbo/Documents/app/health-app/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:10:13-63
+93            android:value="true" />
+93-->[:react-native-firebase_app] /Users/aminigbo/Documents/app/health-app/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-33
+94
+95        <service
+95-->[:react-native-firebase_app] /Users/aminigbo/Documents/app/health-app/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:13:9-21:19
+96            android:name="com.google.firebase.components.ComponentDiscoveryService"
+96-->[:react-native-firebase_app] /Users/aminigbo/Documents/app/health-app/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:14:13-84
+97            android:directBootAware="true"
+97-->[:react-native-firebase_app] /Users/aminigbo/Documents/app/health-app/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:15:13-43
+98            android:exported="false" >
+98-->[:react-native-firebase_app] /Users/aminigbo/Documents/app/health-app/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:16:13-37
+99            <meta-data
+99-->[:react-native-firebase_app] /Users/aminigbo/Documents/app/health-app/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:18:13-20:85
+100                android:name="com.google.firebase.components:io.invertase.firebase.app.ReactNativeFirebaseAppRegistrar"
+100-->[:react-native-firebase_app] /Users/aminigbo/Documents/app/health-app/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:19:17-120
+101                android:value="com.google.firebase.components.ComponentRegistrar" />
+101-->[:react-native-firebase_app] /Users/aminigbo/Documents/app/health-app/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:20:17-82
+102            <meta-data
+102-->[com.google.firebase:firebase-messaging:23.4.0] /Users/aminigbo/.gradle/caches/transforms-3/89b19f608f45a95c166039c8441fb1f0/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:57:13-59:85
+103                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar"
+103-->[com.google.firebase:firebase-messaging:23.4.0] /Users/aminigbo/.gradle/caches/transforms-3/89b19f608f45a95c166039c8441fb1f0/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:58:17-122
+104                android:value="com.google.firebase.components.ComponentRegistrar" />
+104-->[com.google.firebase:firebase-messaging:23.4.0] /Users/aminigbo/.gradle/caches/transforms-3/89b19f608f45a95c166039c8441fb1f0/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:59:17-82
+105            <meta-data
+105-->[com.google.firebase:firebase-messaging:23.4.0] /Users/aminigbo/.gradle/caches/transforms-3/89b19f608f45a95c166039c8441fb1f0/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:60:13-62:85
+106                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+106-->[com.google.firebase:firebase-messaging:23.4.0] /Users/aminigbo/.gradle/caches/transforms-3/89b19f608f45a95c166039c8441fb1f0/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:61:17-119
+107                android:value="com.google.firebase.components.ComponentRegistrar" />
+107-->[com.google.firebase:firebase-messaging:23.4.0] /Users/aminigbo/.gradle/caches/transforms-3/89b19f608f45a95c166039c8441fb1f0/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:62:17-82
+108            <meta-data
+108-->[com.google.firebase:firebase-installations:17.2.0] /Users/aminigbo/.gradle/caches/transforms-3/e85ee2bcb7fc55497a7ea82e6ed4bcf9/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:15:13-17:85
+109                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+109-->[com.google.firebase:firebase-installations:17.2.0] /Users/aminigbo/.gradle/caches/transforms-3/e85ee2bcb7fc55497a7ea82e6ed4bcf9/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:16:17-130
+110                android:value="com.google.firebase.components.ComponentRegistrar" />
+110-->[com.google.firebase:firebase-installations:17.2.0] /Users/aminigbo/.gradle/caches/transforms-3/e85ee2bcb7fc55497a7ea82e6ed4bcf9/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:17:17-82
+111            <meta-data
+111-->[com.google.firebase:firebase-installations:17.2.0] /Users/aminigbo/.gradle/caches/transforms-3/e85ee2bcb7fc55497a7ea82e6ed4bcf9/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:18:13-20:85
+112                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+112-->[com.google.firebase:firebase-installations:17.2.0] /Users/aminigbo/.gradle/caches/transforms-3/e85ee2bcb7fc55497a7ea82e6ed4bcf9/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:19:17-127
+113                android:value="com.google.firebase.components.ComponentRegistrar" />
+113-->[com.google.firebase:firebase-installations:17.2.0] /Users/aminigbo/.gradle/caches/transforms-3/e85ee2bcb7fc55497a7ea82e6ed4bcf9/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:20:17-82
+114            <meta-data
+114-->[com.google.firebase:firebase-common-ktx:20.4.2] /Users/aminigbo/.gradle/caches/transforms-3/c8fc951b0cd69a86da54c3a2ed411999/transformed/jetified-firebase-common-ktx-20.4.2/AndroidManifest.xml:12:13-14:85
+115                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+115-->[com.google.firebase:firebase-common-ktx:20.4.2] /Users/aminigbo/.gradle/caches/transforms-3/c8fc951b0cd69a86da54c3a2ed411999/transformed/jetified-firebase-common-ktx-20.4.2/AndroidManifest.xml:13:17-116
+116                android:value="com.google.firebase.components.ComponentRegistrar" />
+116-->[com.google.firebase:firebase-common-ktx:20.4.2] /Users/aminigbo/.gradle/caches/transforms-3/c8fc951b0cd69a86da54c3a2ed411999/transformed/jetified-firebase-common-ktx-20.4.2/AndroidManifest.xml:14:17-82
+117            <meta-data
+117-->[com.google.firebase:firebase-common:20.4.2] /Users/aminigbo/.gradle/caches/transforms-3/daf9a7bf3a48ab270ea5762e95491cd6/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:35:13-37:85
+118                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+118-->[com.google.firebase:firebase-common:20.4.2] /Users/aminigbo/.gradle/caches/transforms-3/daf9a7bf3a48ab270ea5762e95491cd6/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:36:17-109
+119                android:value="com.google.firebase.components.ComponentRegistrar" />
+119-->[com.google.firebase:firebase-common:20.4.2] /Users/aminigbo/.gradle/caches/transforms-3/daf9a7bf3a48ab270ea5762e95491cd6/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:37:17-82
+120            <meta-data
+120-->[com.google.firebase:firebase-datatransport:18.1.7] /Users/aminigbo/.gradle/caches/transforms-3/58f872e428809aaf482ad1dd73a1829e/transformed/jetified-firebase-datatransport-18.1.7/AndroidManifest.xml:27:13-29:85
+121                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+121-->[com.google.firebase:firebase-datatransport:18.1.7] /Users/aminigbo/.gradle/caches/transforms-3/58f872e428809aaf482ad1dd73a1829e/transformed/jetified-firebase-datatransport-18.1.7/AndroidManifest.xml:28:17-115
+122                android:value="com.google.firebase.components.ComponentRegistrar" />
+122-->[com.google.firebase:firebase-datatransport:18.1.7] /Users/aminigbo/.gradle/caches/transforms-3/58f872e428809aaf482ad1dd73a1829e/transformed/jetified-firebase-datatransport-18.1.7/AndroidManifest.xml:29:17-82
+123        </service>
+124
+125        <provider
+125-->[:react-native-firebase_app] /Users/aminigbo/Documents/app/health-app/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:23:9-27:38
+126            android:name="io.invertase.firebase.app.ReactNativeFirebaseAppInitProvider"
+126-->[:react-native-firebase_app] /Users/aminigbo/Documents/app/health-app/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:24:13-88
+127            android:authorities="com.healthpro.reactnativefirebaseappinitprovider"
+127-->[:react-native-firebase_app] /Users/aminigbo/Documents/app/health-app/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:25:13-86
+128            android:exported="false"
+128-->[:react-native-firebase_app] /Users/aminigbo/Documents/app/health-app/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:26:13-37
+129            android:initOrder="99" />
+129-->[:react-native-firebase_app] /Users/aminigbo/Documents/app/health-app/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:27:13-35
+130        <provider
+130-->[:react-native-image-picker] /Users/aminigbo/Documents/app/health-app/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:8:9-16:20
+131            android:name="com.imagepicker.ImagePickerProvider"
+131-->[:react-native-image-picker] /Users/aminigbo/Documents/app/health-app/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:9:13-63
+132            android:authorities="com.healthpro.imagepickerprovider"
+132-->[:react-native-image-picker] /Users/aminigbo/Documents/app/health-app/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:10:13-71
+133            android:exported="false"
+133-->[:react-native-image-picker] /Users/aminigbo/Documents/app/health-app/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-37
+134            android:grantUriPermissions="true" >
+134-->[:react-native-image-picker] /Users/aminigbo/Documents/app/health-app/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:12:13-47
+135            <meta-data
+135-->[:react-native-image-picker] /Users/aminigbo/Documents/app/health-app/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:13:13-15:70
+136                android:name="android.support.FILE_PROVIDER_PATHS"
+136-->[:react-native-image-picker] /Users/aminigbo/Documents/app/health-app/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:14:17-67
+137                android:resource="@xml/imagepicker_provider_paths" />
+137-->[:react-native-image-picker] /Users/aminigbo/Documents/app/health-app/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:15:17-67
+138        </provider>
+139        <provider
+139-->[:react-native-webview] /Users/aminigbo/Documents/app/health-app/node_modules/react-native-webview/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:8:9-16:20
+140            android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider"
+140-->[:react-native-webview] /Users/aminigbo/Documents/app/health-app/node_modules/react-native-webview/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:9:13-83
+141            android:authorities="com.healthpro.fileprovider"
+141-->[:react-native-webview] /Users/aminigbo/Documents/app/health-app/node_modules/react-native-webview/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:10:13-64
+142            android:exported="false"
+142-->[:react-native-webview] /Users/aminigbo/Documents/app/health-app/node_modules/react-native-webview/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-37
+143            android:grantUriPermissions="true" >
+143-->[:react-native-webview] /Users/aminigbo/Documents/app/health-app/node_modules/react-native-webview/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:12:13-47
+144            <meta-data
+144-->[:react-native-image-picker] /Users/aminigbo/Documents/app/health-app/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:13:13-15:70
+145                android:name="android.support.FILE_PROVIDER_PATHS"
+145-->[:react-native-image-picker] /Users/aminigbo/Documents/app/health-app/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:14:17-67
+146                android:resource="@xml/file_provider_paths" />
+146-->[:react-native-image-picker] /Users/aminigbo/Documents/app/health-app/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:15:17-67
+147        </provider>
+148
+149        <activity
+149-->[com.google.android.gms:play-services-auth:20.7.0] /Users/aminigbo/.gradle/caches/transforms-3/39737e3ab5e52c982290d9325f3afbbe/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:23:9-27:75
+150            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+150-->[com.google.android.gms:play-services-auth:20.7.0] /Users/aminigbo/.gradle/caches/transforms-3/39737e3ab5e52c982290d9325f3afbbe/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:24:13-93
+151            android:excludeFromRecents="true"
+151-->[com.google.android.gms:play-services-auth:20.7.0] /Users/aminigbo/.gradle/caches/transforms-3/39737e3ab5e52c982290d9325f3afbbe/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:25:13-46
+152            android:exported="false"
+152-->[com.google.android.gms:play-services-auth:20.7.0] /Users/aminigbo/.gradle/caches/transforms-3/39737e3ab5e52c982290d9325f3afbbe/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:26:13-37
+153            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+153-->[com.google.android.gms:play-services-auth:20.7.0] /Users/aminigbo/.gradle/caches/transforms-3/39737e3ab5e52c982290d9325f3afbbe/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:27:13-72
+154        <!--
+155            Service handling Google Sign-In user revocation. For apps that do not integrate with
+156            Google Sign-In, this service will never be started.
+157        -->
+158        <service
+158-->[com.google.android.gms:play-services-auth:20.7.0] /Users/aminigbo/.gradle/caches/transforms-3/39737e3ab5e52c982290d9325f3afbbe/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:33:9-37:51
+159            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+159-->[com.google.android.gms:play-services-auth:20.7.0] /Users/aminigbo/.gradle/caches/transforms-3/39737e3ab5e52c982290d9325f3afbbe/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:34:13-89
+160            android:exported="true"
+160-->[com.google.android.gms:play-services-auth:20.7.0] /Users/aminigbo/.gradle/caches/transforms-3/39737e3ab5e52c982290d9325f3afbbe/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:35:13-36
+161            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+161-->[com.google.android.gms:play-services-auth:20.7.0] /Users/aminigbo/.gradle/caches/transforms-3/39737e3ab5e52c982290d9325f3afbbe/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:36:13-107
+162            android:visibleToInstantApps="true" />
+162-->[com.google.android.gms:play-services-auth:20.7.0] /Users/aminigbo/.gradle/caches/transforms-3/39737e3ab5e52c982290d9325f3afbbe/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:37:13-48
+163
+164        <receiver
+164-->[com.google.firebase:firebase-messaging:23.4.0] /Users/aminigbo/.gradle/caches/transforms-3/89b19f608f45a95c166039c8441fb1f0/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:29:9-40:20
+165            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+165-->[com.google.firebase:firebase-messaging:23.4.0] /Users/aminigbo/.gradle/caches/transforms-3/89b19f608f45a95c166039c8441fb1f0/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:30:13-78
+166            android:exported="true"
+166-->[com.google.firebase:firebase-messaging:23.4.0] /Users/aminigbo/.gradle/caches/transforms-3/89b19f608f45a95c166039c8441fb1f0/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:31:13-36
+167            android:permission="com.google.android.c2dm.permission.SEND" >
+167-->[com.google.firebase:firebase-messaging:23.4.0] /Users/aminigbo/.gradle/caches/transforms-3/89b19f608f45a95c166039c8441fb1f0/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:32:13-73
+168            <intent-filter>
+168-->[:react-native-firebase_messaging] /Users/aminigbo/Documents/app/health-app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:27:13-29:29
+169                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+169-->[:react-native-firebase_messaging] /Users/aminigbo/Documents/app/health-app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:28:17-81
+169-->[:react-native-firebase_messaging] /Users/aminigbo/Documents/app/health-app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:28:25-78
+170            </intent-filter>
+171
+172            <meta-data
+172-->[com.google.firebase:firebase-messaging:23.4.0] /Users/aminigbo/.gradle/caches/transforms-3/89b19f608f45a95c166039c8441fb1f0/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:37:13-39:40
+173                android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED"
+173-->[com.google.firebase:firebase-messaging:23.4.0] /Users/aminigbo/.gradle/caches/transforms-3/89b19f608f45a95c166039c8441fb1f0/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:38:17-92
+174                android:value="true" />
+174-->[com.google.firebase:firebase-messaging:23.4.0] /Users/aminigbo/.gradle/caches/transforms-3/89b19f608f45a95c166039c8441fb1f0/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:39:17-37
+175        </receiver>
+176        <!--
+177             FirebaseMessagingService performs security checks at runtime,
+178             but set to not exported to explicitly avoid allowing another app to call it.
+179        -->
+180        <service
+180-->[com.google.firebase:firebase-messaging:23.4.0] /Users/aminigbo/.gradle/caches/transforms-3/89b19f608f45a95c166039c8441fb1f0/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:46:9-53:19
+181            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+181-->[com.google.firebase:firebase-messaging:23.4.0] /Users/aminigbo/.gradle/caches/transforms-3/89b19f608f45a95c166039c8441fb1f0/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:47:13-82
+182            android:directBootAware="true"
+182-->[com.google.firebase:firebase-messaging:23.4.0] /Users/aminigbo/.gradle/caches/transforms-3/89b19f608f45a95c166039c8441fb1f0/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:48:13-43
+183            android:exported="false" >
+183-->[com.google.firebase:firebase-messaging:23.4.0] /Users/aminigbo/.gradle/caches/transforms-3/89b19f608f45a95c166039c8441fb1f0/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:49:13-37
+184            <intent-filter android:priority="-500" >
+184-->[:react-native-firebase_messaging] /Users/aminigbo/Documents/app/health-app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:18:13-20:29
+185                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+185-->[:react-native-firebase_messaging] /Users/aminigbo/Documents/app/health-app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:19:17-78
+185-->[:react-native-firebase_messaging] /Users/aminigbo/Documents/app/health-app/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:19:25-75
+186            </intent-filter>
+187        </service>
+188
+189        <activity
+189-->[com.google.android.gms:play-services-base:18.0.1] /Users/aminigbo/.gradle/caches/transforms-3/5c5981df95557675d2e59dd19bcd65bb/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+190            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+190-->[com.google.android.gms:play-services-base:18.0.1] /Users/aminigbo/.gradle/caches/transforms-3/5c5981df95557675d2e59dd19bcd65bb/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+191            android:exported="false"
+191-->[com.google.android.gms:play-services-base:18.0.1] /Users/aminigbo/.gradle/caches/transforms-3/5c5981df95557675d2e59dd19bcd65bb/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+192            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+192-->[com.google.android.gms:play-services-base:18.0.1] /Users/aminigbo/.gradle/caches/transforms-3/5c5981df95557675d2e59dd19bcd65bb/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+193
+194        <provider
+194-->[com.google.firebase:firebase-common:20.4.2] /Users/aminigbo/.gradle/caches/transforms-3/daf9a7bf3a48ab270ea5762e95491cd6/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:23:9-28:39
+195            android:name="com.google.firebase.provider.FirebaseInitProvider"
+195-->[com.google.firebase:firebase-common:20.4.2] /Users/aminigbo/.gradle/caches/transforms-3/daf9a7bf3a48ab270ea5762e95491cd6/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:24:13-77
+196            android:authorities="com.healthpro.firebaseinitprovider"
+196-->[com.google.firebase:firebase-common:20.4.2] /Users/aminigbo/.gradle/caches/transforms-3/daf9a7bf3a48ab270ea5762e95491cd6/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:25:13-72
+197            android:directBootAware="true"
+197-->[com.google.firebase:firebase-common:20.4.2] /Users/aminigbo/.gradle/caches/transforms-3/daf9a7bf3a48ab270ea5762e95491cd6/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:26:13-43
+198            android:exported="false"
+198-->[com.google.firebase:firebase-common:20.4.2] /Users/aminigbo/.gradle/caches/transforms-3/daf9a7bf3a48ab270ea5762e95491cd6/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:27:13-37
+199            android:initOrder="100" />
+199-->[com.google.firebase:firebase-common:20.4.2] /Users/aminigbo/.gradle/caches/transforms-3/daf9a7bf3a48ab270ea5762e95491cd6/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:28:13-36
+200
+201        <meta-data
+201-->[com.google.android.gms:play-services-basement:18.2.0] /Users/aminigbo/.gradle/caches/transforms-3/7474ea6f701d343bb9a483fcdd8d0019/transformed/jetified-play-services-basement-18.2.0/AndroidManifest.xml:21:9-23:69
+202            android:name="com.google.android.gms.version"
+202-->[com.google.android.gms:play-services-basement:18.2.0] /Users/aminigbo/.gradle/caches/transforms-3/7474ea6f701d343bb9a483fcdd8d0019/transformed/jetified-play-services-basement-18.2.0/AndroidManifest.xml:22:13-58
+203            android:value="@integer/google_play_services_version" />
+203-->[com.google.android.gms:play-services-basement:18.2.0] /Users/aminigbo/.gradle/caches/transforms-3/7474ea6f701d343bb9a483fcdd8d0019/transformed/jetified-play-services-basement-18.2.0/AndroidManifest.xml:23:13-66
+204
+205        <provider
+205-->[androidx.emoji2:emoji2:1.0.0] /Users/aminigbo/.gradle/caches/transforms-3/223146ef33e3aa619e8b04649706e145/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
+206            android:name="androidx.startup.InitializationProvider"
+206-->[androidx.emoji2:emoji2:1.0.0] /Users/aminigbo/.gradle/caches/transforms-3/223146ef33e3aa619e8b04649706e145/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:27:13-67
+207            android:authorities="com.healthpro.androidx-startup"
+207-->[androidx.emoji2:emoji2:1.0.0] /Users/aminigbo/.gradle/caches/transforms-3/223146ef33e3aa619e8b04649706e145/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:28:13-68
+208            android:exported="false" >
+208-->[androidx.emoji2:emoji2:1.0.0] /Users/aminigbo/.gradle/caches/transforms-3/223146ef33e3aa619e8b04649706e145/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:29:13-37
+209            <meta-data
+209-->[androidx.emoji2:emoji2:1.0.0] /Users/aminigbo/.gradle/caches/transforms-3/223146ef33e3aa619e8b04649706e145/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+210                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+210-->[androidx.emoji2:emoji2:1.0.0] /Users/aminigbo/.gradle/caches/transforms-3/223146ef33e3aa619e8b04649706e145/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:32:17-75
+211                android:value="androidx.startup" />
+211-->[androidx.emoji2:emoji2:1.0.0] /Users/aminigbo/.gradle/caches/transforms-3/223146ef33e3aa619e8b04649706e145/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:33:17-49
+212            <meta-data
+212-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/aminigbo/.gradle/caches/transforms-3/d5d05479173d466a6bd0989b3b3e5ef4/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
+213                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+213-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/aminigbo/.gradle/caches/transforms-3/d5d05479173d466a6bd0989b3b3e5ef4/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
+214                android:value="androidx.startup" />
+214-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/aminigbo/.gradle/caches/transforms-3/d5d05479173d466a6bd0989b3b3e5ef4/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
+215        </provider>
+216
+217        <meta-data
+217-->[com.facebook.soloader:soloader:0.10.5] /Users/aminigbo/.gradle/caches/transforms-3/ec3312a013bd7d8a70466a1977a1dba4/transformed/jetified-soloader-0.10.5/AndroidManifest.xml:12:9-14:37
+218            android:name="com.facebook.soloader.enabled"
+218-->[com.facebook.soloader:soloader:0.10.5] /Users/aminigbo/.gradle/caches/transforms-3/ec3312a013bd7d8a70466a1977a1dba4/transformed/jetified-soloader-0.10.5/AndroidManifest.xml:13:13-57
+219            android:value="false" />
+219-->[com.facebook.soloader:soloader:0.10.5] /Users/aminigbo/.gradle/caches/transforms-3/ec3312a013bd7d8a70466a1977a1dba4/transformed/jetified-soloader-0.10.5/AndroidManifest.xml:14:13-34
+220
+221        <service
+221-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/aminigbo/.gradle/caches/transforms-3/e54bca2df0888b5dd14627f8f5155785/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:28:9-34:19
+222            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+222-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/aminigbo/.gradle/caches/transforms-3/e54bca2df0888b5dd14627f8f5155785/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:29:13-103
+223            android:exported="false" >
+223-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/aminigbo/.gradle/caches/transforms-3/e54bca2df0888b5dd14627f8f5155785/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:30:13-37
+224            <meta-data
+224-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/aminigbo/.gradle/caches/transforms-3/e54bca2df0888b5dd14627f8f5155785/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:31:13-33:39
+225                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+225-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/aminigbo/.gradle/caches/transforms-3/e54bca2df0888b5dd14627f8f5155785/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:32:17-94
+226                android:value="cct" />
+226-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/aminigbo/.gradle/caches/transforms-3/e54bca2df0888b5dd14627f8f5155785/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:33:17-36
+227        </service>
+228        <service
+228-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/aminigbo/.gradle/caches/transforms-3/89cba5a9be482c0adf70c139ab928aad/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:26:9-30:19
+229            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+229-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/aminigbo/.gradle/caches/transforms-3/89cba5a9be482c0adf70c139ab928aad/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:27:13-117
+230            android:exported="false"
+230-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/aminigbo/.gradle/caches/transforms-3/89cba5a9be482c0adf70c139ab928aad/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:28:13-37
+231            android:permission="android.permission.BIND_JOB_SERVICE" >
+231-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/aminigbo/.gradle/caches/transforms-3/89cba5a9be482c0adf70c139ab928aad/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:29:13-69
+232        </service>
+233
+234        <receiver
+234-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/aminigbo/.gradle/caches/transforms-3/89cba5a9be482c0adf70c139ab928aad/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:32:9-34:40
+235            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+235-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/aminigbo/.gradle/caches/transforms-3/89cba5a9be482c0adf70c139ab928aad/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:33:13-132
+236            android:exported="false" />
+236-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/aminigbo/.gradle/caches/transforms-3/89cba5a9be482c0adf70c139ab928aad/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:34:13-37
+237    </application>
+238
+239</manifest>

@@ -1,0 +1,6 @@
+export const INITIALIZED = "INITIALIZED" 
+export const USER = "USER"  
+export const PRODUCTS = "PRODUCTS" 
+export const NOTIFICATION = "NOTIFICATION" 
+export const SCHEDULES = "SCHEDULES" 
+export const INSURANCE = "INSURANCE" 
